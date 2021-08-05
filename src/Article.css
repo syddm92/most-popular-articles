@@ -1,0 +1,63 @@
+.articleContent {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    border: none;
+    background-color: ghostwhite;
+    padding-top: 20px;
+  }
+.articleContent:hover {
+  background-color: silver;
+  cursor: pointer;
+}
+  .articleSummary {
+    width: 70%;
+    height: 120px;
+  }
+.articleImage, .chevron {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    height: 120px;
+}
+.articleImage img {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+}
+.articleTitle {
+  font-size: medium;
+  font-weight: bold;
+  flex-grow: 1;
+}
+.articleSummaryFooter {
+  display: flex;
+  color: gray;
+  font-size: medium;
+}
+.articleDate {
+  margin-left: auto;
+  align-self: center;
+  white-space: nowrap;
+}
+.articleSummary {
+  display: flex;
+  flex-direction: column;
+}
+.articleSummary div {
+  padding: 5px;
+}
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+@media only screen and (max-width: 768px) {
+    .articleContent {
+      width: 100%;
+    }
+}
